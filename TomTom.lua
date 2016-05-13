@@ -1104,6 +1104,8 @@ local function usage()
     ChatFrame1:AddMessage(L["|cffffff78/way reset all|r - Resets all waypoints"])
     ChatFrame1:AddMessage(L["|cffffff78/way reset <zone>|r - Resets all waypoints in zone"])
     ChatFrame1:AddMessage(L["|cffffff78/way list|r - Lists active waypoints in current zone"])
+	-- CSS
+    ChatFrame1:AddMessage(L["|cffffff78/way show|r - Show crazy arrow"])
 end
 
 function TomTom:GetClosestWaypoint()
@@ -1242,6 +1244,11 @@ SlashCmdList["TOMTOM_WAY"] = function(msg)
     if ltoken == "list" then
         TomTom:DebugListWaypoints()
         return
+    elseif ltoken == "show" then
+		-- CSS
+		TomTom.profile.arrow.enable = true
+		TomTom:ShowHideCrazyArrow()
+		return
     elseif ltoken == "reset" then
         local ltoken2 = tokens[2] and tokens[2]:lower()
         if ltoken2 == "all" then

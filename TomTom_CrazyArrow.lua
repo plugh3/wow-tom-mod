@@ -300,6 +300,15 @@ local dropdown_info = {
 			isTitle = 1,
 		},
 		{
+			-- CSS
+			-- Turn off crazy arrow
+			text = L["Hide crazy arrow"],
+			func = function()
+				TomTom.profile.arrow.enable = false
+				TomTom:ShowHideCrazyArrow()
+			end,
+		},
+		{
 			-- Clear waypoint from crazy arrow
 			text = L["Clear waypoint from crazy arrow"],
 			func = function()
