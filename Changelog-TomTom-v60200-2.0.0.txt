@@ -1,0 +1,13 @@
+tag v60200-2.0.0
+586ac73dc0e0ee04198c52689238ae0e9cb5202b
+Jim Whitehead <jnwhiteh@gmail.com>
+2015-09-20 05:23:51 +0200
+
+Tagging v60200-2.0.0
+
+
+--------------------
+
+Hendrik Leppkes:
+	- Replace the unmaintained Astrolabe with HereBeDragons-1.0
+	- Replace (unmaintained) LibMapData-1.0 with HereBeDragons-1.0
